@@ -1,12 +1,13 @@
 on:
   push:
-    branches: [ "*" ]
+    branches: ["*"]
+
 permissions:
   contents: read
 
 jobs:
-  int:
-    runs-on:ubuntu-latest
+  lint:
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: python
