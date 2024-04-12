@@ -1,0 +1,12 @@
+on:
+  push:
+    branches: [ "*" ]
+permissions:
+  contents: read
+
+jobs:
+  int:
+    runs-on:ubuntu-latest
+    defaults:
+      run:
+        working-directory: python
